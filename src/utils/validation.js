@@ -55,10 +55,6 @@ export const StepValidation = (data, step) => {
     
 }
 
-export const FinishValidation = (data) => {
-  return Object.values(data).every(item => item !== '');
-}
-
 export const EmailValidation = (email) => {
     return /\S+@\S+\.\S+/.test(email);
 }
